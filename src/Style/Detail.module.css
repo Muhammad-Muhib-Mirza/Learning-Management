@@ -1,0 +1,97 @@
+.container{
+    width: 90vw;
+    display: flex;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.headObjective{
+    width: 30rem;
+     margin-top: 0.5rem;
+}
+
+.tagContainer{
+    margin-top: 2rem;
+    height: 10rem;
+    overflow-y: auto;
+}
+
+.imageContainer{
+    display: flex; flex-direction: column;
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f0f4f8, #e0e8f0); /* Soft gradient background */
+    overflow: hidden;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #44efef, #007b7f);
+    animation: pulse 1.5s infinite; /* Pulsing effect */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #44efef;
+    margin: 0 5px;
+    animation: bounce 0.6s infinite alternate;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes bounce {
+    to {
+      transform: translateY(-15px);
+      opacity: 1;
+    }
+  }
+
+@media screen and (max-width:800px) {
+    .container{
+        flex-direction: column;
+    }
+    .headObjective{
+        width: 18rem;
+        text-align: justify;
+    }
+    .tagContainer{
+        height: 7rem;
+    }
+    .imageContainer{
+        margin-left: 2rem;
+    }
+}

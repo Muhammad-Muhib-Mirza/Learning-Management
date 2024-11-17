@@ -1,0 +1,138 @@
+.container {
+  display: flex;
+  width: 95vw;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+}
+
+.projectContainer {
+  min-height: 100vh;
+  height: auto;
+  width: 68%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.subjectContainer {
+  display: flex;
+  float: right;
+}
+
+.subject {
+  font-size: 0.7rem;
+  background-color: blue;
+  padding: 2px 4px 2px 4px;
+  border-radius: 5px;
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
+  font-weight: bold;
+}
+
+.count {
+  font-size: 0.9rem;
+  background-color: blue;
+  color: white;
+  padding: 3px 6px 3px 6px;
+  border-radius: 6px;
+  margin-left: 0.2rem;
+  width: 40%;
+  overflow: hidden;
+}
+
+.math {
+  background-color: #a7dcdf;
+}
+.ss {
+  background-color: #b1c0c8;
+}
+.ela {
+  background-color: #fee934;
+  width: 27.833px;
+  padding-left: 5.5px;
+}
+.sci {
+  background-color: #a3b379;
+  width: 27.833px;
+  padding-left: 5.5px;
+}
+
+.one {
+  background-color: #fab231;
+}
+
+.two {
+  background-color: #db2064;
+}
+
+.three {
+  background-color: #26814c;
+}
+
+.four {
+  background-color: #fab231;
+}
+
+.five {
+  background-color: #3e8cc8;
+}
+
+.filterContainer {
+  width: 25%;
+  display: flex;
+}
+
+.AssesMe {
+    display: none;
+}
+
+.loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle{
+  height: 10rem;
+  width: 10rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 25px solid gray;
+  border-bottom: 25px solid #44efef;
+  animation: rotate 1.5s infinite;
+}
+@keyframes rotate {
+  100%{
+      transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 100vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .filterContainer {
+    width: auto;
+  }
+  .AssesMe {
+    position: absolute;
+    right: 1rem;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+    display: block;
+  }
+  .projectContainer{
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

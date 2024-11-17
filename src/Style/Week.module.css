@@ -1,0 +1,66 @@
+.container {
+  padding: 20;
+  background: #f9f9f9;
+  border-radius: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90vw;
+  margin: auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.weekBtn {
+  width: 17%;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding: 10px;
+  height: 199.333px;
+}
+
+.subContainer {
+  overflow: hidden;
+  background: #f7f7f7;
+  padding: 20;
+  border-radius: 5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 1rem;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+.mobileContainer {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .mobileContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: none;
+  }
+  .weekBtn {
+    width: 10rem;
+    height: 3rem;
+  }
+
+  .weekContainer {
+    display: flex;
+    height: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardBody {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

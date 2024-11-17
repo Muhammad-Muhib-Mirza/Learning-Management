@@ -1,0 +1,12 @@
+.mobileContainer{
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .mobileContainer{
+        display: block;
+    }
+    .box{
+        display: none;
+    }
+}

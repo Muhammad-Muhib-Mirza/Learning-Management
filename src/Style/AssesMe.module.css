@@ -1,0 +1,15 @@
+.radioBtn{
+    border: 2px solid #fd8a8a;
+}
+
+.image{
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:800px) {
+    .image{
+        width: 25rem;
+        height: 6rem;
+    }
+}

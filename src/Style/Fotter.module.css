@@ -1,0 +1,67 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
+    height: 4.5rem; 
+    width: 100vw;
+}
+
+.footText{
+    color:#00D4FF;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.footSmall{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.copyRight{
+    color: white;
+    position: absolute;
+    right: 1rem;
+    font-size: 14px;
+    line-height: 19.1px;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 12rem;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    width: 5rem;
+    position: absolute;
+    left: 1rem;
+}
+
+.socialPic{
+    height: 1.5rem;
+    margin-left: 0.8rem;
+}
+
+@media screen and (max-width:600px) {
+ .footer{
+    flex-direction: column;
+    height: 10rem;
+ }   
+ .social{
+    position: relative;
+    left: 0;
+    width: 6rem;
+    margin-top: 1rem;
+ }
+ .copyRight{
+    position: relative;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 11rem;
+ }
+ .ipic{
+    margin-left: 0;
+ }
+}

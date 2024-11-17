@@ -1,0 +1,35 @@
+.navContainer {
+  padding-bottom: 1rem;
+}
+
+.navSearch {
+  width: 50vw;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  background-color: #0069ab;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+@media screen and (max-width:800px) {
+    .navSearch{
+        height: 3rem;
+    }
+    .searchIcon{
+        height: 3rem;
+    }
+    .searchForm{
+        margin-top: 0.5rem;
+    }
+    .formBtn{
+      width: 4.5rem;
+      font-size: small;
+    }
+    .navSearch {
+      width: 40vw;
+    }
+    .btnproject{
+      width: 9rem;
+    }
+}

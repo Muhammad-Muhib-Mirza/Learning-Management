@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.navsearch::placeholder {
+  color: white !important;
+  opacity: 1; /* Ensure the opacity is set to 100% */
+}

@@ -1,0 +1,38 @@
+.loader {
+  width: 7.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  height: 0.7rem;
+  width: 0.7rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 10px solid gray;
+  border-bottom: 10px solid #44efef;
+  animation: rotate 1.5s infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaderlg {
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circlelg {
+  height: 5rem;
+  width: 5rem;
+  display: inline-block;
+  border-radius: 50%;
+  border: 10px solid gray;
+  border-bottom: 10px solid #44efef;
+  animation: rotate 1.5s infinite;
+}
